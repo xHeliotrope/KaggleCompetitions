@@ -3,7 +3,7 @@ import model
 
 # make a prediction given the data
 predictions = []
-with open('data.csv') as data_file:
+with open('./train.csv') as data_file:
     data = data_file.read()
     for row in data:
         predictions.append(model.make_prediction(row))
